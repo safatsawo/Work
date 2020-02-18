@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SiteController@index');
 Route::get('/about', 'SiteController@about'); 
-Route::get('/doctor', 'SiteController@doctor'); 
-Route::get('/departments', 'SiteController@departments'); 
+Route::get('/frames', 'SiteController@frames'); 
+Route::get('/services', 'SiteController@services'); 
 Route::get('/contact', 'SiteController@contact'); 
 
 Route::get('/appointment', 'SiteController@appointment'); 

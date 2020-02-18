@@ -38,19 +38,19 @@
                 <div class="col-lg-10 d-none d-md-block">
                     <div class="row d-flex">
                         <div class="col-md-4 pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
                                     class="icon-map"></span></div>
-                            <span class="text">Address: PREMISES OF SUNNY FM NORTH RIDGE, ACCRA</span>
+                            <span class="text">Address:Premises Of Sunny FM North Ridge, ACCRA</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
                                     class="icon-paper-plane"></span></div>
-                            <span class="text">Email: info@thirdeyecare.com</span>
+                            <span class="text mb-4">Email: info@thirdeyecare.com</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
                                     class="icon-phone2"></span></div>
-                            <span class="text">Phone: 0543287008 OR 0503881093</span>
+                            <span class="text mb-4">0543287008/0503881093</span>
                         </div>
                     </div>
                 </div>
@@ -67,11 +67,9 @@
                     An Appointment</a></p>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="/" class="nav-link pl-0">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/doctor" class="nav-link">Doctor</a></li>
-                    <li class="nav-item"><a href="/departments" class="nav-link">Departments</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                @foreach($navigations as $navigation)
+                    <li class="nav-item"><a href="{{ $navigation->url }}" class="nav-link pl-0">{{ $navigation->name }}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -93,8 +91,7 @@
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">PREMISES OF SUNNY FM
                                         NORTH RIDGE, ACCRA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0543287008 OR
-                                            0503881093</span></a></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0543287008/0503881093</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">info@thirdeyecare.com</span></a></li>
                             </ul>
@@ -111,13 +108,9 @@
                     <div class="ftco-footer-widget mb-5 ml-md-4">
                         <h2 class="ftco-heading-2">Links</h2>
                         <ul class="list-unstyled">
-                            <li><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                            <li><a href="/about"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                            <li><a href="/doctor"><span class="ion-ios-arrow-round-forward mr-2"></span>Doctor</a></li>
-                            <li><a href="departments"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
-                            <li><a href="/contact"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
-                            </li>
+                        @foreach($navigations as $navigation)
+                    <li class="nav-item"><a href="{{ $navigation->url }}" class="nav-link pl-0">{{ $navigation->name }}</a></li>
+                    @endforeach
                         </ul>
                     </div>
                 </div>

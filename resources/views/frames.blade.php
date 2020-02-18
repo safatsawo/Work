@@ -6,9 +6,9 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">Qualified Doctors</h1>
+                <h1 class="mb-2 bread">FRAMES/LENSES</h1>
                 <p class="breadcrumbs"><span class="mr-2"><a href="index">Home <i
-                                class="ion-ios-arrow-forward"></i></a></span> <span>Doctor <i
+                                class="ion-ios-arrow-forward"></i></a></span> <span>frames and lenses <i
                             class="ion-ios-arrow-forward"></i></span></p>
             </div>
         </div>
@@ -26,15 +26,15 @@
                     </div>
                     <div class="text pt-3 text-center">
                         <h3>Dr.Abena Ghana</h3>
-                        <span class="position mb-2">Optometrist, MD</span>
+                        <!-- <span class="position mb-2">Optometrist, MD</span> -->
                         <div class="faded">
                             <p>An optometrist is an eye doctor that can examine, diagnose, and treat your eyes.</p>
-                            <ul class="ftco-social text-center">
+                            <!-- <ul class="ftco-social text-center">
                                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                                 <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
                                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>

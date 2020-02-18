@@ -2,43 +2,37 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class SiteController extends Controller
 {
 //   public function show(Details)
-//   {
-// $post = \DB::table('Details')->where()
-//   };
+    //   {
+    // $post = \DB::table('Details')->where()
+    //   };
 
+    public function index()
+    {
+        return view('welcome');
+    }
 
+    public function about()
+    {
+        return view('about');
+    }
 
-
-
-
-
-   public function index()
-   {
-       return view('/');
-   }
-   public function about()
-   {
-       return view('about');
-   }
-   public function doctor()
-   {
-       return view('doctor');
-   } 
-   public function departments()
-   {
-       return view('departmentssp');
-   }
-   public function contact()
-   {
-       return view('contact');
-   }
-   public function appointment()
-   {
-       return view('appointment');
-   }
+    public function Frames()
+    {
+        return view('frames');
+    }
+    public function Services()
+    {
+        return view('services');
+    }
+    public function contact()
+    {
+        return view('contact');
+    }
+    public function appointment()
+    {
+        return view('appointment');
+    }
 }

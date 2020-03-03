@@ -13,17 +13,17 @@ class TopNavigationTableSeeder extends Seeder
     public function run()
     {
             TopNavigation::create([
-                'name' => 'Address',
+                'name' => 'Premises Of Sunny FM North Ridge, ACCRA',
                 'url' => '/contact',
                 'slug' => 'address',
             ]);
             TopNavigation::create([
-                'name' => 'Email',
+                'name' => 'info@thirdeyecare.com',
                 'url' => '/contact',
                 'slug' => 'email',
             ]);
             TopNavigation::create([
-                'name' => 'Phone',
+                'name' => '0543287008/0503881093',
                 'url' => '/contact',
                 'slug' => 'phone',
             ]);

@@ -28,13 +28,14 @@
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts.</p>
                     </div>
-                    <form action="#" class="appointment-form ftco-animate">
+                    <form  method="POST" action="/appointaction" class="appointment-form ftco-animate">
+                    {{ csrf_field()}}  
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First Name">
+                                <input name="Fname" type="text" class="form-control" placeholder="First Name">
                             </div>
                             <div class="form-group ml-md-4">
-                                <input type="text" class="form-control" placeholder="Last Name">
+                                <input name="Lname" type="text" class="form-control" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="d-md-flex">
@@ -42,7 +43,7 @@
                                 <div class="form-field">
                                     <div class="select-wrap">
                                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                        <select name="" id="" class="form-control">
+                                        <select name="services" id="" class="form-control">
                                             <option value="">Select Your Services</option>
                                             <option value="">Neurology</option>
                                             <option value="">Cardiology</option>
@@ -54,26 +55,26 @@
                                 </div>
                             </div>
                             <div class="form-group ml-md-4">
-                                <input type="text" class="form-control" placeholder="Phone">
+                                <input name="phone" type="text" class="form-control" placeholder="Phone">
                             </div>
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input type="text" class="form-control appointment_date" placeholder="Date">
+                                    <input name="date" type="text" class="form-control appointment_date" placeholder="Date">
                                 </div>
                             </div>
                             <div class="form-group ml-md-4">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-ios-clock"></span></div>
-                                    <input type="text" class="form-control appointment_time" placeholder="Time">
+                                    <input name="time" type="text" class="form-control appointment_time" placeholder="Time">
                                 </div>
                             </div>
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="2" class="form-control"
+                                <textarea name="message" id="" cols="30" rows="2" class="form-control"
                                     placeholder="Message"></textarea>
                             </div>
                             <div class="form-group ml-md-4">

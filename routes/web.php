@@ -16,5 +16,12 @@ Route::get('/about', 'SiteController@about');
 Route::get('/frames', 'SiteController@frames'); 
 Route::get('/services', 'SiteController@services'); 
 Route::get('/contact', 'SiteController@contact'); 
+Route::get('/appointment', 'SiteController@appointment');
 
-Route::get('/appointment', 'SiteController@appointment'); 
+
+Route::POST('/form/create', 'FormController@create');
+Route::POST('/formaction', 'FormController@storeForm'); 
+Route::POST('/appoint/create', 'AppointmentController@create');
+Route::POST('/appointaction', 'AppointmentController@storeAppoint'); 
+
+

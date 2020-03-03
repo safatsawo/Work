@@ -9,22 +9,22 @@
  				<div class="row no-gutters slider-text align-items-center justify-content-start"
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
- 						<h1 class="mb-4">Helping You <span>Stay Happy</span></h1>
- 						<h3 class="subheading">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
+ 						<h1 class="mb-4">Helping You Stay Happy</h1>
+ 						<h3 class="subheading text-info">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
  						<!-- <a><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>
  				</div>
  			</div>
  		</div>
 
- 		<div class="slider-item" style="background-image:url(images/cover10.jpeg);">
+ 		<div class="slider-item" style="background:url(images/cover10.jpeg) no-repeat contain;">
  			<div class="overlay"></div>
  			<div class="container">
- 				<div class="row no-gutters slider-text align-items-center justify-content-start"
+ 				<div class="row no-gutters slider-text align-items-center justify-content-start"no-repeat
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
- 						<h1 class="mb-4">We Care <span>About Your Eye</span></h1>
- 						<h3 class="subheading">Your Eye is Our Top Priority with Comprehensive, Affordable medical.
+ 						<h1 class="mb-4">We Care About Your Eye</h1>
+ 						<h3 class="subheading text-info">Your Eye is Our Top Priority with Comprehensive, Affordable medical.
  						</h3>
  						<!-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>

@@ -38,19 +38,19 @@
                 <div class="col-lg-10 d-none d-md-block">
                     <div class="row d-flex">
                         <div class="col-md-4 pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
-                                    class="icon-map"></span></div>
-                            <span class="text">Address:Premises Of Sunny FM North Ridge, ACCRA</span>
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><a href="{{$user = DB::table('top_navigations')->where('id', '1')->value('url')}}"><span
+                                    class="icon-map"></span></a></div>
+                            <span class="text">Address:{{$user = DB::table('top_navigations')->where('id', '1')->value('name')}}</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
-                                    class="icon-paper-plane"></span></div>
-                            <span class="text mb-4">Email: info@thirdeyecare.com</span>
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><a href="{{$user = DB::table('top_navigations')->where('id', '1')->value('url')}}"><span
+                                    class="icon-paper-plane"></span></a></div>
+                            <span class="text mb-4">Email: {{$user = DB::table('top_navigations')->where('id','2')->value('name')}}</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><span
-                                    class="icon-phone2"></span></div>
-                            <span class="text mb-4">0543287008/0503881093</span>
+                            <div class="icon bg-white mr-2 mb-4 d-flex justify-content-center align-items-center"><a href="{{$user = DB::table('top_navigations')->where('id', '1')->value('url')}}"><span
+                                    class="icon-phone2"></span></a></div>
+                            <span class="text mb-4">{{$user = DB::table('top_navigations')->where('id','3')->value('name')}}</span>
                         </div>
                     </div>
                 </div>
@@ -89,11 +89,10 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">PREMISES OF SUNNY FM
-                                        NORTH RIDGE, ACCRA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0543287008/0503881093</span></a></li>
+                                <li><a href="#"><span class="icon icon-map-marker"></span><span class="text">{{$user = DB::table('top_navigations')->where('id', '1')->value('name')}}</span></a></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">{{$user = DB::table('top_navigations')->where('id','3')->value('name')}}</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@thirdeyecare.com</span></a></li>
+                                            class="text"> {{$user = DB::table('top_navigations')->where('id','2')->value('name')}}</span></a></li>
                             </ul>
                         </div>
 

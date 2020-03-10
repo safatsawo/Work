@@ -2,7 +2,7 @@
 
 @section('content')
  	<section class="home-slider owl-carousel">
- 		<div class="slider-item" style="background-image:url(images/care.jpeg);"
+ 		<div class="slider-item" style="background-image:url('images/care.jpeg');"
  			data-stellar-background-ratio="0.5">
  			<div class="overlay"></div>
  			<div class="container">
@@ -10,21 +10,21 @@
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
  						<h1 class="mb-4">Helping You Stay Happy</h1>
- 						<h3 class="subheading text-info">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
+ 						<h3 class="subheading text-primary">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
  						<!-- <a><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>
  				</div>
  			</div>
  		</div>
 
- 		<div class="slider-item" style="background:url(images/cover10.jpeg) no-repeat contain;">
+ 		<div class="slider-item" style="background:url('images/cover10.jpeg');">
  			<div class="overlay"></div>
  			<div class="container">
  				<div class="row no-gutters slider-text align-items-center justify-content-start"no-repeat
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
  						<h1 class="mb-4">We Care About Your Eye</h1>
- 						<h3 class="subheading text-info">Your Eye is Our Top Priority with Comprehensive, Affordable medical.
+ 						<h3 class="subheading text-primary">Your Eye is Our Top Priority with Comprehensive, Affordable medical.
  						</h3>
  						<!-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>
@@ -407,13 +407,14 @@
  						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
  							there live the blind texts.</p>
  					</div>
- 					<form action="#" class="appointment-form ftco-animate">
+ 					<form action="/consultaction" method="POST" class="appointment-form ftco-animate">
+					 {{ csrf_field()}}
  						<div class="d-md-flex">
  							<div class="form-group">
- 								<input type="text" class="form-control" placeholder="First Name">
+ 								<input name="firstname" type="text" class="form-control" placeholder="First Name">
  							</div>
  							<div class="form-group ml-md-4">
- 								<input type="text" class="form-control" placeholder="Last Name">
+ 								<input name="lastname" type="text" class="form-control" placeholder="Last Name">
  							</div>
  						</div>
  						<div class="d-md-flex">
@@ -421,38 +422,38 @@
  								<div class="form-field">
  									<div class="select-wrap">
  										<div class="icon"><span class="ion-ios-arrow-down"></span></div>
- 										<select name="" id="" class="form-control">
+ 										<select name="services" id="" class="form-control">
  											<option value="">Select Your Services</option>
- 											<option value="">Neurology</option>
- 											<option value="">Cardiology</option>
- 											<option value="">Dental</option>
- 											<option value="">Ophthalmology</option>
- 											<option value="">Other Services</option>
+ 											<option value="neurology">Neurology</option>
+ 											<option value="cardiology">Cardiology</option>
+ 											<option value="dental">Dental</option>
+ 											<option value="ophthalmology">Ophthalmology</option>
+ 											<option value="others">Other Services</option>
  										</select>
  									</div>
  								</div>
  							</div>
  							<div class="form-group ml-md-4">
- 								<input type="text" class="form-control" placeholder="Phone">
+ 								<input name="phone" type="text" class="form-control" placeholder="Phone">
  							</div>
  						</div>
  						<div class="d-md-flex">
  							<div class="form-group">
  								<div class="input-wrap">
  									<div class="icon"><span class="ion-md-calendar"></span></div>
- 									<input type="text" class="form-control appointment_date" placeholder="Date">
+ 									<input name="date" type="text" class="form-control appointment_date" placeholder="Date">
  								</div>
  							</div>
  							<div class="form-group ml-md-4">
  								<div class="input-wrap">
  									<div class="icon"><span class="ion-ios-clock"></span></div>
- 									<input type="text" class="form-control appointment_time" placeholder="Time">
+ 									<input name="time"type="text" class="form-control appointment_time" placeholder="Time">
  								</div>
  							</div>
  						</div>
  						<div class="d-md-flex">
  							<div class="form-group">
- 								<textarea name="" id="" cols="30" rows="2" class="form-control"
+ 								<textarea name="message" id="" cols="30" rows="2" class="form-control"
  									placeholder="Message"></textarea>
  							</div>
  							<div class="form-group ml-md-4">

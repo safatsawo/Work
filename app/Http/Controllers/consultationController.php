@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Appointment;
+use App\consultation;
 
-class AppointmentController extends Controller
+class consultationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $appoint = Appointment::all();
-        return view('appoint.index', compact('appoint'));
+        $consult = consultation::all();
+        return view('consult.index', compact('consult'));
     }
 
     /**
@@ -25,7 +25,7 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        return view('appoint.create');
+        return view('consult.create');
     }
 
     /**
@@ -34,22 +34,22 @@ class AppointmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function storeAppoint(Request $request)
+    public function storeConsult(Request $request)
     {
         // dd($request->all());
-        $appoint = new Appointment();
-        $appoint->first_name = request('first_name');
-        $appoint->last_name = request('last_name');
-        $appoint->email = request('email');
-        $appoint->phone = request('phone');
-        // $appoint->date = request('date');
-        // $appoint->time = request('time');
-        $appoint->message = request('message');
+        $consult = new consultation();
+        $consult->firstname = request('firstname');
+        $consult->lastname = request('lastname');
+        $consult->services = request('services');
+        $consult->phone = request('phone');
+        $consult->date = request('date');
+        $consult->time = request('time');
+        $consult->message = request('message');
 
 
+        $consult->save();
+        return redirect('/');
 
-        $appoint->save();
-        return redirect('/appointment');
     }
 
     /**

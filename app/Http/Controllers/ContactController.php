@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Appointment;
+use App\Contact;
 
-class AppointmentController extends Controller
+
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $appoint = Appointment::all();
-        return view('appoint.index', compact('appoint'));
+            $contact = Contact::all();
+            return view('contact.index', compact('contact'));
     }
 
     /**
@@ -25,7 +26,7 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        return view('appoint.create');
+        return view('contact.create');
     }
 
     /**
@@ -34,31 +35,42 @@ class AppointmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function storeAppoint(Request $request)
+    public function storeContact(Request $request)
     {
-        // dd($request->all());
-        $appoint = new Appointment();
-        $appoint->first_name = request('first_name');
-        $appoint->last_name = request('last_name');
-        $appoint->email = request('email');
-        $appoint->phone = request('phone');
-        // $appoint->date = request('date');
-        // $appoint->time = request('time');
-        $appoint->message = request('message');
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+  
+        $imageName = time().'.'.$request->image->extension();  
+   
+        $request->image->move(public_path('images'), $imageName);
+        
+
+        $contacts = new Contact();
+        $contacts->full_name = request('full_name');
+        $contacts->subject = request('subject');
+       $contacts->message = request('message');
+    
 
 
 
-        $appoint->save();
-        return redirect('/appointment');
+
+
+
+
+
+
+        $contacts->save();
+        return redirect('/contact');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Contact $contact)
     {
         //
     }
@@ -66,10 +78,10 @@ class AppointmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Contact $contact)
     {
         //
     }
@@ -78,10 +90,10 @@ class AppointmentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -89,10 +101,10 @@ class AppointmentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contact $contact)
     {
         //
     }

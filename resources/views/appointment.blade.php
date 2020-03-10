@@ -32,33 +32,21 @@
                     {{ csrf_field()}}  
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input name="Fname" type="text" class="form-control" placeholder="First Name">
+                                <input name="first_name" type="text" class="form-control" placeholder="First Name">
                             </div>
                             <div class="form-group ml-md-4">
-                                <input name="Lname" type="text" class="form-control" placeholder="Last Name">
+                                <input name="last_name" type="text" class="form-control" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <div class="form-field">
-                                    <div class="select-wrap">
-                                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                        <select name="services" id="" class="form-control">
-                                            <option value="">Select Your Services</option>
-                                            <option value="">Neurology</option>
-                                            <option value="">Cardiology</option>
-                                            <option value="">Dental</option>
-                                            <option value="">Ophthalmology</option>
-                                            <option value="">Other Services</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="form-group ml-md-4">
                                 <input name="phone" type="text" class="form-control" placeholder="Phone">
                             </div>
                         </div>
-                        <div class="d-md-flex">
+                        <!-- <div class="d-md-flex">
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-md-calendar"></span></div>
@@ -71,7 +59,7 @@
                                     <input name="time" type="text" class="form-control appointment_time" placeholder="Time">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="d-md-flex">
                             <div class="form-group">
                                 <textarea name="message" id="" cols="30" rows="2" class="form-control"

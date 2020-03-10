@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTopNavigationsTable extends Migration
+class CreateContactsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateTopNavigationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('top_navigations', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('url');
-            $table->string('slug')->uniqid();
+            $table->string('full_name');
+            $table->string('subject');
+            $table->string('image')->nullable();
+            // $table->string('mime')->nullable();
+            // $table->string('original_filname')->nullable();
+            $table->string('message');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateTopNavigationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('top_navigations');
+        Schema::dropIfExists('contacts');
     }
 }

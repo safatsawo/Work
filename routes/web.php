@@ -27,5 +27,5 @@ Route::POST('/appointaction', 'AppointmentController@storeAppoint');
 Route::POST('/consult/create', 'consultationController@create');
 Route::POST('/consultaction', 'consultationController@storeConsult'); 
 
-Route::POST('/contact/create', 'ContactController@create');
-Route::POST('/contactaction', 'ContactController@storeContact'); 
+// Route::POST('/contact/create', 'ContactController@create');
+Route::POST('/contact/us', 'ContactController@contact')->name('contact.us'); 

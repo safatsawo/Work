@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactUs;
 use App\Contact;
 
 
@@ -19,6 +21,13 @@ class ContactController extends Controller
             return view('contact.index', compact('contact'));
     }
 
+public function contact(Request $request)
+{
+    // dd($request->all());
+//    return Mail::to('safatsawo@gmail.com')->send(new ContactUs($request));
+return redirect()->back()->withSuccess('THANK YOU FOR CONTACTING US');
+
+}
     /**
      * Show the form for creating a new resource.
      *
@@ -37,29 +46,12 @@ class ContactController extends Controller
      */
     public function storeContact(Request $request)
     {
-        $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-  
-        $imageName = time().'.'.$request->image->extension();  
-   
-        $request->image->move(public_path('images'), $imageName);
-        
-
+       
         $contacts = new Contact();
         $contacts->full_name = request('full_name');
         $contacts->subject = request('subject');
        $contacts->message = request('message');
     
-
-
-
-
-
-
-
-
-
         $contacts->save();
         return redirect('/contact');
     }

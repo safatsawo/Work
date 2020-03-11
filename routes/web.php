@@ -29,3 +29,4 @@ Route::POST('/consultaction', 'consultationController@storeConsult');
 
 // Route::POST('/contact/create', 'ContactController@create');
 Route::POST('/contact/us', 'ContactController@contact')->name('contact.us'); 
+

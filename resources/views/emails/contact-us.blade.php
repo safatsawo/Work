@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-    <ul class="list-group">
+  <ul class="list-group">
   <li class="list-group-item">Name: {{ $request->full_name }}</li>
   <li class="list-group-item">Phone Email: {{ $request->email }}</li>
   <li class="list-group-item">Phone Subject: {{ $request->subject }}</li>

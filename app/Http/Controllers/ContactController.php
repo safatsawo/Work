@@ -24,7 +24,7 @@ class ContactController extends Controller
 public function contact(Request $request)
 {
     // dd($request->all());
-//    return Mail::to('safatsawo@gmail.com')->send(new ContactUs($request));
+ Mail::to('safatsawo@gmail.com')->send(new ContactUs($request));
 return redirect()->back()->withSuccess('THANK YOU FOR CONTACTING US');
 
 }

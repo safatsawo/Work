@@ -3,11 +3,9 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\Request;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Http\Request;
-
 
 class ContactUs extends Mailable
 {
@@ -32,6 +30,6 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        return $this->from($this->request->email)->view('emails.contact-us')->with([$this->request]);
+        return $this->from($this->request->email)->view('emails.contact-us')->with([$this->request]); //specifying the exact folder and file to repost here to be shwon in the mail
     }
 }

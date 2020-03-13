@@ -76,15 +76,7 @@
         </div>
     </nav>
     <!-- END nav -->
-  
-    <div class="alert alert-success alert-dismissible fade show" role="alert">.
-    @if( Session::has( 'success' ))
-     {{ Session::get( 'success' ) }}
-@endif
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+
 
     @yield('content')
     <footer class="ftco-footer ftco-bg-dark ftco-section">

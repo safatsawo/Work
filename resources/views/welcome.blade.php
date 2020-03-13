@@ -2,7 +2,7 @@
 
 @section('content')
  	<section class="home-slider owl-carousel">
- 		<div class="slider-item" style="background-image:url('images/care.jpeg');"
+ 		<div class="slider-item " style="background-image:url('images/care.jpeg');"
  			data-stellar-background-ratio="0.5">
  			<div class="overlay"></div>
  			<div class="container">
@@ -10,7 +10,7 @@
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
  						<h1 class="mb-4">Helping You Stay Happy</h1>
- 						<h3 class="subheading text-primary">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
+ 						<!-- <h3 class="subheading text-primary">Everyday We Bring Hope and Smile to the Patient We Serve</h3> -->
  						<!-- <a><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>
  				</div>
@@ -24,7 +24,7 @@
  					data-scrollax-parent="true">
  					<div class="col-md-6 text ftco-animate">
  						<h1 class="mb-4">We Care About Your Eye</h1>
- 						<h3 class="subheading text-primary">Your Eye is Our Top Priority with Comprehensive, Affordable medical.
+ 						<!-- <h3 class="subheading text-primary">Your Eye is Our Top Priority with Comprehensive, Affordable medical. -->
  						</h3>
  						<!-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> -->
  					</div>
@@ -203,101 +203,66 @@
  		<div class="container">
  			<div class="row justify-content-center mb-5 pb-2">
  				<div class="col-md-8 text-center heading-section ftco-animate">
- 					<span class="subheading">Doctors</span>
- 					<h2 class="mb-4">Our Qualified Doctors</h2>
+ 					<!-- <span class="subheading">Frames and lenses</span> -->
+ 					<h2 class="mb-4">Frames And Lenses</h2>
  					<!-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
  						necessary regelialia. It is a paradisematic country</p> -->
  				</div>
  			</div>
  			<div class="row">
- 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 				<div class="col-md-6 shadow-sm col-lg-3 ftco-animate">
  					<div class="staff">
  						<div class="img-wrap d-flex align-items-stretch">
- 							<div class="img align-self-stretch"
- 								style="background-image: url(images/doc1.jpeg);"></div>
+ 							<div class="img align-self-stretch "
+ 								style="background-image: url(images/full.jpg);"></div>
  						</div>
  						<div class="text pt-3 text-center">
- 							<h3>Dr. Abena Ghana</h3>
- 							<span class="position mb-2">Ophthalmologist(M.D)</span>
- 							<div class="faded">
- 								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
- 								<ul class="ftco-social text-center">
- 									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a>
- 									</li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
- 								</ul>
- 							</div>
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist(M.D)</span> -->
+ 						
  						</div>
  					</div>
  				</div>
- 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 				<div class="col-md-6 shadow-sm col-lg-3 ftco-animate">
  					<div class="staff">
  						<div class="img-wrap d-flex align-items-stretch">
  							<div class="img align-self-stretch"
- 								style="background-image: url(images/doc3.jpeg);"></div>
+ 								style="background-image: url(images/semill.jpg);"></div>
  						</div>
  						<div class="text pt-3 text-center">
- 							<h3>Dr. Kwasi Ghana</h3>
- 							<span class="position mb-2">Ophthalmologist</span>
- 							<div class="faded">
- 								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
- 								<ul class="ftco-social text-center">
- 									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a>
- 									</li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
- 								</ul>
- 							</div>
+ 							<h3>Semi-Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist</span> -->
+ 						
  						</div>
  					</div>
  				</div>
- 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 				<div class="col-md-6 shadow-sm col-lg-3 ftco-animate">
  					<div class="staff">
  						<div class="img-wrap d-flex align-items-stretch">
  							<div class="img align-self-stretch"
- 								style="background-image: url(images/doc-3.jpg);"></div>
+ 								style="background-image: url(images/remless.jpg);"></div>
  						</div>
  						<div class="text pt-3 text-center">
- 							<h3>Dr. Kwaku Ghana</h3>
- 							<span class="position mb-2">ophthalmologists</span>
- 							<div class="faded">
- 								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
- 								<ul class="ftco-social text-center">
- 									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a>
- 									</li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
- 								</ul>
- 							</div>
+ 							<h3>Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">ophthalmologists</span> -->
+ 						
  						</div>
  					</div>
  				</div>
- 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 				<div class="col-md-6 shadow-sm col-lg-3 ftco-animate">
  					<div class="staff">
  						<div class="img-wrap d-flex align-items-stretch">
  							<div class="img align-self-stretch"
- 								style="background-image: url(images/doc4.jpeg);"></div>
+ 								style="background-image: url(images/full4.jpg);"></div>
  						</div>
  						<div class="text pt-3 text-center">
- 							<h3>Dr. Angel Ghana</h3>
- 							<span class="position mb-2"> opticians </span>
- 							<div class="faded">
- 								<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
- 								<ul class="ftco-social text-center">
- 									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a>
- 									</li>
- 									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
- 								</ul>
- 							</div>
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2"> opticians </span> -->
+ 						
  						</div>
  					</div>
  				</div>
+				 <a href="/frames" class="btn btn-primary stretched-link center">View More...</a>
  			</div>
  		</div>
  	</section>
@@ -347,7 +312,7 @@
  						</div>
  						<div class="item">
  							<div class="testimony-wrap d-flex">
- 								<div class="user-img mr-4" style="background-image: url(images/person_3.jpg)">
+ 								<div class="user-img mr-1" style="background-image: url(images/person_3.jpg)">
  								</div>
  								<div class="text ml-2 bg-light">
  									<span class="quote d-flex align-items-center justify-content-center">

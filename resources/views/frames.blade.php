@@ -15,101 +15,205 @@
     </div>
 </section>
 
-<section class="ftco-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(images/doc1.jpeg);">
-                        </div>
-                    </div>
-                    <div class="text pt-3 text-center">
-                        <h3>Dr.Abena Ghana</h3>
-                        <!-- <span class="position mb-2">Optometrist, MD</span> -->
-                        <div class="faded">
-                            <p>An optometrist is an eye doctor that can examine, diagnose, and treat your eyes.</p>
-                            <!-- <ul class="ftco-social text-center">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(images/doc2.jpeg);">
-                        </div>
-                    </div>
-                    <div class="text pt-3 text-center">
-                        <h3>Dr. Akua Ghana</h3>
-                        <span class="position mb-2">Ophthalmologist</span>
-                        <div class="faded">
-                            <p>An ophthalmologist is a medical doctor who can perform medical and surgical
-                                interventions for eye conditions..</p>
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(images/doc3.jpeg);">
-                        </div>
-                    </div>
-                    <div class="text pt-3 text-center">
-                        <h3>Dr. Kofi Ghana</h3>
-                        <span class="position mb-2">Opticians</span>
-                        <div class="faded">
-                            <p>An ophthalmologist is a medical doctor who can perform medical and surgical interventions
-                                for eye conditions..</p>
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(images/doc4.jpeg);">
-                        </div>
-                    </div>
-                    <div class="text pt-3 text-center">
-                        <h3>Dr. MOna Ghana</h3>
-                        <span class="position mb-2">Pediatrician</span>
-                        <div class="faded">
-                            <p>An ophthalmologist is a medical doctor who can perform medical and surgical interventions
-                                for eye conditions..</p>
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="ftco-section ftco-no-pt">
+ 		<div class="container">
+ 			<div class="row justify-content-center mb-5 pb-2">
+ 				<div class="col-md-8 text-center heading-section ftco-animate">
+ 					<!-- <span class="subheading">Frames and lenses</span> -->
+ 					<h2 class="mb-4">Full Frames with Lenses</h2>
+ 					<!-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
+ 						necessary regelialia. It is a paradisematic country</p> -->
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/full.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist(M.D)</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/full1.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/full3.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">ophthalmologists</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/full4.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Full Frames Glasses</h3>
+ 							<!-- <span class="position mb-2"> opticians </span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
 
+     <section class="ftco-section ftco-no-pt">
+ 		<div class="container">
+ 			<div class="row justify-content-center mb-5 pb-2">
+ 				<div class="col-md-8 text-center heading-section ftco-animate">
+ 					<!-- <span class="subheading">Frames and lenses</span> -->
+ 					<h2 class="mb-4">Rimless Frames with Lenses</h2>
+ 					<!-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
+ 						necessary regelialia. It is a paradisematic country</p> -->
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/rimless5.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist(M.D)</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/rimless.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/rimless3.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">ophthalmologists</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/rimless4.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2"> opticians </span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
 
-        </div>
-    </div>
-
-</section>
+     <section class="ftco-section ftco-no-pt">
+ 		<div class="container">
+ 			<div class="row justify-content-center mb-5 pb-2">
+ 				<div class="col-md-8 text-center heading-section ftco-animate">
+ 					<!-- <span class="subheading">Frames and lenses</span> -->
+ 					<h2 class="mb-4">Semi-Remiless Frames with Lenses</h2>
+ 					<!-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
+ 						necessary regelialia. It is a paradisematic country</p> -->
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/semiless.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Semi-Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist(M.D)</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/semiiless.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Semi-Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">Ophthalmologist</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/semi1less.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Semi-Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2">ophthalmologists</span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-6 col-lg-3 ftco-animate">
+ 					<div class="staff">
+ 						<div class="img-wrap d-flex align-items-stretch">
+ 							<div class="img align-self-stretch"
+ 								style="background-image: url(images/semiless3.jpg);"></div>
+ 						</div>
+ 						<div class="text pt-3 text-center">
+ 							<h3>Semi-Rimless Frames Glasses</h3>
+ 							<!-- <span class="position mb-2"> opticians </span> -->
+ 						
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
 
 @endsection

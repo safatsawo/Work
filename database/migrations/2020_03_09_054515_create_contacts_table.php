@@ -17,9 +17,6 @@ class CreateContactsTable extends Migration
             $table->bigIncrements('id');
             $table->string('full_name');
             $table->string('subject');
-            $table->string('image')->nullable();
-            // $table->string('mime')->nullable();
-            // $table->string('original_filname')->nullable();
             $table->string('message');
             $table->timestamps();
         });

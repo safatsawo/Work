@@ -21,13 +21,19 @@ Route::get('/appointment', 'SiteController@appointment');
 
 Route::POST('/form/create', 'FormController@create');
 Route::POST('/formaction', 'FormController@storeForm'); 
+
 Route::POST('/appoint/create', 'AppointmentController@create');
 Route::POST('/appointaction', 'AppointmentController@storeAppoint'); 
 
 Route::POST('/consult/create', 'consultationController@create');
 Route::POST('/consultaction', 'consultationController@storeConsult'); 
 
+Route::get('/contact/create', 'ContactController@create'); 
+// Route::POST('/contactaction', 'ContactController@storeContact'); 
+
 // Route::POST('/contact/create', 'ContactController@create');
 Route::POST('/contact/us', 'ContactController@contact')->name('contact.us'); 
+
+
 
 

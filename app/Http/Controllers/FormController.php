@@ -43,8 +43,17 @@ class FormController extends Controller
 
       $form->save();
       return redirect('/contact');
-    }
+    
 
+    $validatedData = $request->validate([
+        'full_name' => 'required|unique:posts|max:255',
+        'email' => 'required',
+        'subject' => 'required',
+        'subject' => 'required',
+
+
+    ]);
+    }
     /**
      * Display the specified resource.
      *

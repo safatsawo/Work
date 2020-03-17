@@ -46,7 +46,7 @@ return redirect()->back()->withSuccess('THANK YOU FOR CONTACTING US');
      */
     public function storeContact(Request $request)
     {
-       
+       dd($request->all());
         $contacts = new Contact();
         $contacts->full_name = request('full_name');
         $contacts->subject = request('subject');

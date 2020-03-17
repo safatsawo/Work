@@ -7,9 +7,11 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
-                <div class="col-md-9 ftco-animate text-center">
+                <div class="col-md-9 ftco-animate 
+                
+                text-center">
                     <h1 class="mb-2 bread">Appointment</h1>
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                    <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i
                                     class="ion-ios-arrow-forward"></i></a></span> <span>Appointment <i
                                 class="ion-ios-arrow-forward"></i></span></p>
                 </div>
@@ -28,6 +30,15 @@
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts.</p>
                     </div>
+                    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
                     <form  method="POST" action="/appointaction" class="appointment-form ftco-animate">
                     {{ csrf_field()}}  
                         <div class="d-md-flex">
@@ -46,20 +57,6 @@
                                 <input name="phone" type="text" class="form-control" placeholder="Phone">
                             </div>
                         </div>
-                        <!-- <div class="d-md-flex">
-                            <div class="form-group">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input name="date" type="text" class="form-control appointment_date" placeholder="Date">
-                                </div>
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-ios-clock"></span></div>
-                                    <input name="time" type="text" class="form-control appointment_time" placeholder="Time">
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="d-md-flex">
                             <div class="form-group">
                                 <textarea name="message" id="" cols="30" rows="2" class="form-control"

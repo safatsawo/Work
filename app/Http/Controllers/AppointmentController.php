@@ -36,20 +36,25 @@ class AppointmentController extends Controller
      */
     public function storeAppoint(Request $request)
     {
-        // dd($request->all());
-        $appoint = new Appointment();
-        $appoint->first_name = request('first_name');
-        $appoint->last_name = request('last_name');
-        $appoint->email = request('email');
-        $appoint->phone = request('phone');
-        // $appoint->date = request('date');
-        // $appoint->time = request('time');
-        $appoint->message = request('message');
+            $validateData =$request->validate([
+            'first_name' => 'required|max:255',
+            'last_name' => 'required|max:255',
+            'email' => 'required',
+            'phone' => 'required',
+            'message' => 'required',
+       ]);
+                $appoint = new Appointment();
+                $appoint->first_name = request('first_name');
+                $appoint->last_name = request('last_name');
+                $appoint->email = request('email');
+                $appoint->phone = request('phone');
+                // $appoint->date = request('date');
+                // $appoint->time = request('time');
+                $appoint->message = request('message');
+                $appoint->save();
 
-
-
-        $appoint->save();
-        return redirect('/appointment');
+                return redirect('/appointment');
+        
     }
 
     /**
